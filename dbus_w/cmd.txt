@@ -1,0 +1,14 @@
+安装dbus：
+https://dbus.freedesktop.org/releases/dbus/
+
+下载后
+./configure 
+make && make install
+
+
+安装glib2.0：
+sudo apt-get install libglib2.0-dev
+
+
+发送信号
+gdbus emit --session --object-path /com/dbus/wang --signal com.dbus.Signal2.TEST2022 "wanghaitao 123"
